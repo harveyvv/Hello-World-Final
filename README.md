@@ -63,7 +63,7 @@ Successfully tagged datawire/hello-world:latest
 Build the image first, then launch it using `docker run`.
 
 ```shell
-$ docker run --rm -it -p 8000:8000 datawire/hello-world
+$ docker run --rm -it -p 8000:8000 harveyvv/Hello-World-Final
  * Serving Flask app "server" (lazy loading)
  * Environment: production
    WARNING: Do not use the development server in a production environment.
