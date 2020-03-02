@@ -1,14 +1,15 @@
 from flask import Flask
 
 PORT = 8000
-MESSAGE = "Hello, world!\n"
+f = open('HelloMessage.txt','r')
+MESSAGE = f.read()
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def root():
-    result = MESSAGE.encode("utf-8")
+    result = MESSAGE
     return result
 
 
